@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        TabView {
+            Text("Home View!")
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            Text("Settings View!")
+                .tabItem {
+                    Label("Settings", systemImage: "gearshape.fill")
+                }
+        }.tabViewStyle(PageTabViewStyle()) //Scroll to Left or Right Side
     }
 }
 
