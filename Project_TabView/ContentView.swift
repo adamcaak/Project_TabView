@@ -18,7 +18,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Settings", systemImage: "gearshape.fill")
                 }
-        }.tabViewStyle(PageTabViewStyle()) //Scroll to Left or Right Side
+        }//.tabViewStyle(PageTabViewStyle()) //Scroll to Left or Right Side
     }
 }
 
